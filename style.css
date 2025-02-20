@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 16px;
+    height: 100vh;
+    color: hsl(187, 24%, 22%);
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: -1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 350px;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input {
+    padding: 15px;
+    outline: none;
+    border: 1px solid #87a3a6;
+    border-radius: 5px;
+}
+
+.mail,.first, .query-cont, .message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.geneq, .support {
+    display: flex;
+    flex-direction: row ;
+    gap: 10px;
+    border: 1px solid #87a3a6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#message {
+    border-radius: 5px;
+    outline: none;
+    padding: 1rem;
+}
+
+.consent {
+    display: flex;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.error {
+    display: none;
+    color: hsl(0, 66%, 54%);
+}
+
+
+button {
+    background-color: hsl(169, 82%, 27%);
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+    border: transparent;
+    border-radius: 8px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(150, 97%, 12%);
+}
+
+/* Stlying the active status */
+
+.active {
+    background: hsl(148, 38%, 91%);
+    color: hsl(169, 82%, 27%);
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+
+
+
+
+
+@media screen and (min-width : 700px){
+    .names {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .names div, .query div {
+        width: 50%;
+    }
+
+    .container {
+        width: 600px;
+        margin: 0;
+    }
+
+    .query {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .message {
+        columns: 3;
+    }
+}
