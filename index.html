@@ -38,20 +38,20 @@
           <div class="first-error error"></div>
 </div>
           <div class="mail">
-            <label for="name">Last Name *</label>
+            <label for="lastname">Last Name *</label>
 
             <input type="text" name="lastname" id="lastname" />
           <div class="last-error error"></div>
           </div>
         </div>
         <div class="mail">
-          <label for="email">Email Address *</label>
+          <label for="mail">Email Address *</label>
           <input type="email" name="mail" id="mail" />
           <div class="mailerr error"></div>
         </div>
 
         <div class="query-cont">
-        <label for="queries">Query Type *</label>
+        <label for="query">Query Type *</label>
         
         <div class="query">
           <div class="geneq">
@@ -61,7 +61,7 @@
               id="generalEnq"
               class="general"
             />
-            <p class="gen">General Enquiry</p>
+            <label for="generalEnq" class="gen">General Enquiry</label>
           </div>
           <div class="support">
             <input
@@ -70,7 +70,7 @@
               id="query"
               class="supportReq"
             />
-            <p class="Sup">Support Request</p>
+            <label for="query" class="Sup">Support Request</label>
           </div>
         </div>
         <div class="queryerr error"></div>
@@ -83,7 +83,7 @@
 
         <div class="consent">
           <input type="checkbox" name="checkbox" id="checkbox" />
-          <p>I consent to being contacted by the team *</p>
+          <label for="checkbox">I consent to being contacted by the team *</label>
         </div>
         <div class="consent-err error"></div>
         <button type="submit" id="button">Submit</button>
